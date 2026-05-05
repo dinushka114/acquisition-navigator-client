@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  /* This sets Poppins as the default sans font for the entire app */
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --navbar-height: 88px;
+}
+
+.page-hero {
+  padding-top: var(--navbar-height);
+  min-height: calc(16rem + var(--navbar-height));
+}
+
+@media (min-width: 768px) {
+  .page-hero {
+    min-height: calc(18rem + var(--navbar-height));
+  }
+}
+
+
+.headings {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.sub-headings {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  font-variation-settings:
+    "wdth" 100;
+}
